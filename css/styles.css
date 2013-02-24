@@ -1,0 +1,93 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {
+		
+	}
+	
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background: url("../img/lightpaperfibers.png") repeat;    
+    text-align: center;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+h1.title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2.subtitle {
+    letter-spacing: 2px; 
+    font-size: 1.0em;
+}
+
+h3 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+sup {
+    letter-spacing: 0px;
+}
+h1.amp {
+    color: #FF6666;
+    font-size: 3em;
+}
+
+a, a:hover, a:visited, a:focus{
+    color: #FF6666;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px rgba(255,255,255,0.5);
+}
+.header {
+    padding-top: 50px;
+    border-top: 10px solid #10101E;
+}
+.row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content {
+    border-top: 5px dotted #10101E;
+    border-bottom: 5px dotted #10101E;
+}
+img {
+    margin-bottom: 20px;
+}
+.footer {
+    padding-top: 80px;
+    border-bottom: 10px solid #10101E;
+}
