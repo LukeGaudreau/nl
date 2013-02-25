@@ -37,9 +37,10 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     background: url("../img/lightpaperfibers.png") repeat;    
     text-align: center;
+}
+h1, h2 {
     text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
 }
-
 h1, h2, h3 {
     font-weight: normal;
     line-height: 1.5em;
@@ -59,6 +60,9 @@ h3 {
     font-size: 0.8em;
     text-transform: uppercase;
 }
+p {
+    font-size: 0.8em;
+}
 sup {
     letter-spacing: 0px;
 }
@@ -70,7 +74,6 @@ h1.amp {
 a, a:hover, a:visited, a:focus{
     color: #FF6666;
     text-decoration: none;
-    text-shadow: 0px -1px 0px rgba(255,255,255,0.5);
 }
 .header {
     padding-top: 50px;
@@ -88,6 +91,6 @@ img {
     margin-bottom: 20px;
 }
 .footer {
-    padding-top: 80px;
-    border-bottom: 10px solid #10101E;
+    padding-top: 50px;
+    border-bottom: 20px solid #10101E;
 }
