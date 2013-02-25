@@ -35,11 +35,11 @@
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    background: url("../img/lightpaperfibers.png") repeat;    
+    background: url("../img/ricepaper2.png") repeat;    
     text-align: center;
 }
 h1, h2 {
-    text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+    text-shadow: 0px -1px 0px #B0B0BF;
 }
 h1, h2, h3 {
     font-weight: normal;
@@ -69,6 +69,7 @@ sup {
 h1.amp {
     color: #FF6666;
     font-size: 3em;
+    text-shadow: 0px -1px 0px #DD3333;
 }
 
 a, a:hover, a:visited, a:focus{
