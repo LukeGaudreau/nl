@@ -38,6 +38,7 @@ body {
     background: url("../img/ricepaper2.png") repeat;    
     text-align: center;
 }
+
 h1, h2 {
     text-shadow: 0px -1px 0px #B0B0BF;
 }
@@ -69,7 +70,7 @@ sup {
 h1.amp {
     color: #FF6666;
     font-size: 3em;
-    text-shadow: 0px -1px 0px #DD3333;
+    text-shadow: 0px -1px 0px #DDEEEE;
 }
 
 a, a:hover, a:visited, a:focus{
@@ -84,9 +85,35 @@ a, a:hover, a:visited, a:focus{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.content {
+.row.nav {
+    padding: 0;
+    }
+.nav ul {
+    padding: 0;
+    }
+.nav ul li {
+    list-style-type: none;
+    display: block;
+    }
+.nav ul li a, li span.selected {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #222;
+    padding: 30px;
+    display: block;
+    float: left;
+    width: 14%;
+}
+.nav ul li a:hover, li span.selected {
+    color: #FF6666;
+    text-shadow: 0px -1px 0px #DDEEEE;
+    }
+.content, .nav {
     border-top: 5px dotted #10101E;
-    border-bottom: 5px dotted #10101E;
+}
+.content {
+        border-bottom: 5px dotted #10101E;
 }
 img {
     margin-bottom: 20px;
