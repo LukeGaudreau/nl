@@ -18,7 +18,7 @@
 
   <!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
   <script type="text/javascript" src="../js/css3-mediaqueries.js"></script>
-
+  <script type="text/javascript" src="../js/wufoo.js"></script>
 </head>
 
 
@@ -47,24 +47,58 @@
 </div>
 <div class="container">
     <div class="row content">
-      <div class="twelvecol">
-        <div id="wufoo-z7x4m1">
-          Fill out my <a href="http://nlgm.wufoo.com/forms/z7x4m1">online form</a>.
-        </div>
-        <script type="text/javascript">var z7x4m1;(function(d, t) {
-          var s = d.createElement(t), options = {
-            'userName':'nlgm', 
-            'formHash':'z7x4m1', 
-            'autoResize':true,
-            'height':'490',
-            'async':true,
-            'header':'show'};
-          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-          s.onload = s.onreadystatechange = function() {
-            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-            try { z7x4m1 = new WufooForm();z7x4m1.initialize(options);z7x4m1.display(); } catch (e) {}};
-          var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-          })(document, 'script');</script>
+      <div class="onecol"></div>
+      <div class="elevencol last">
+        <form id="form1" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+          action="https://nlgm.wufoo.com/forms/z7x4m1/#public">
+          <header id="header" class="info">
+          <h3>Contact Us</h3>
+          </header>
+          <ul>
+            <li id="foli7" class="notranslate      ">
+            <label class="desc" id="title7" for="Field7">
+              Name
+            </label>
+            <div>
+              <input id="Field7" name="Field7" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" />
+            </div>
+            </li><li id="foli3" class="notranslate      ">
+            <label class="desc" id="title3" for="Field3">
+              Email
+              <span id="req_3" class="req">*</span>
+            </label>
+            <div>
+              <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" required /> 
+            </div>
+            </li>
+            <li id="foli6" 
+            class="notranslate      "><label class="desc" id="title6" for="Field6">
+              Message
+              <span id="req_6" class="req">*</span>
+            </label>
+            <div>
+              <textarea id="Field6" 
+                name="Field6" 
+                class="field textarea medium" 
+                spellcheck="true" 
+                rows="10" cols="50" 
+                tabindex="3" 
+                onkeyup=""
+                required  ></textarea>
+            </div>
+            </li> <li class="buttons ">
+            <div>
+              <input id="saveForm" name="saveForm" class="btTxt submit" 
+              type="submit" value="Submit"
+              /></div>
+            </li>
+            <li class="hide">
+            <label for="comment">Do Not Fill This Out</label>
+            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+            <input type="hidden" id="idstamp" name="idstamp" value="PwipcSZ6xuMdEWMYtL6Cj6+zhpPkP84eN8JdBsrztWc=" />
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
 </div>

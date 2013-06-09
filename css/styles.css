@@ -34,13 +34,13 @@ h2.subtitle {
     font-size: 1.0em;
 }
 
-h3, h4 {
+h3, h4, .wufoo .info h3 {
     text-transform: uppercase;
 }
 h4 {
     font-size: 0.8em;
 }
-p {
+p, .wufoo label {
     font-size: 0.8em;
     margin-bottom: 3em;
 }
@@ -71,7 +71,7 @@ header {
 nav.row {
     padding: 0;
 }
-nav ul {
+nav ul, .wufoo ul {
     padding: 0;
     list-style: none;
     overflow: hidden;
@@ -120,9 +120,19 @@ footer p {
 footer h4.contact {
     display:none;
   }
-.wufoo .info h2 {
-    text-transform: uppercase; !important
+.wufoo {
+    text-align: left;
   }
+.wufoo header {
+  border: 0;
+  padding: 0;
+}
+.wufoo li.hide {
+    display: none;
+  }
+.wufoo li.focused label {
+  color: #FF6666;
+}
 nav.mobile {
     display: none;
   }
