@@ -1,11 +1,123 @@
 /* ============================== */
 /* ! Layout for desktop version   */
 /* ============================== */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-	body {
-		
-	}
-	
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background: url("../img/ricepaper2.png") repeat;
+    text-align: center;
+}
+
+h1, h2 {
+    text-shadow: 0px -1px 0px #B0B0BF;
+}
+h1, h2, h3, h4 {
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+h1.title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h1.title, h1.amp, h2.subtitle {
+    text-align: center;
+    }
+h2.subtitle {
+    letter-spacing: 2px; 
+    font-size: 1.0em;
+}
+
+h3, h4 {
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 0.8em;
+}
+p {
+    font-size: 0.8em;
+    margin-bottom: 3em;
+}
+sup {
+    letter-spacing: 0px;
+}
+h1.amp {
+        font-size: 3em;
+}
+.amp {
+    color: #FF6666;
+    text-shadow: 0px -1px 0px #DDEEEE;
+}
+
+a, a:hover, .content a:hover {
+    color: #FF6666;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #DDEEEE;
+}
+header {
+    padding-top: 50px;
+    border-top: 10px solid #10101E;
+}
+.row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+nav.row {
+    padding: 0;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+nav ul li {
+    text-align: center;
+    display: inline;
+}
+nav ul li a, li.selected {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #222;
+    padding: 30px;
+    display: block;
+    float: left;
+    width: 20%;
+}
+nav ul li a:hover, li.selected {
+    color: #FF6666;
+    text-shadow: 0px -1px 0px #DDEEEE;
+}
+.content, nav {
+    border-top: 5px dotted #10101E;
+}
+.content {
+    border-bottom: 5px dotted #10101E;
+}
+.content a {
+    color: #222;
+    }
+.content a:hover {
+    color: #FF6666;
+}
+img {
+    margin-bottom: 20px;
+}
+footer {
+    padding-top: 50px;
+    border-bottom: 20px solid #10101E;
+}
+footer p {
+    margin-bottom: 1em;
+    }
+
 
 /* ============================= */
 /* ! Layout for mobile version   */
@@ -13,12 +125,50 @@
 
 @media handheld, only screen and (max-width: 767px) {
 
-	body {
-		
-	}
+	  body {
+		    
+	  }
 
+    nav, .content {
+        border: none;
+        }
+    nav ul li a, li.selected {
+        padding: 10px 10px 10px 30px;
+    }
+    nav ul {
+        width: 75%;
+        margin-left: 5px;
+		    padding: 5px 0;
+		    position: relative;
+		    top: 0;
+		    left: 0;
+		    border: solid 1px #aaa;
+		    background: #F2EDEC url(../img/icon-menu.png) no-repeat 10px 20px;
+		    border-radius: 5px;
+		    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	  }
+    nav ul li {
+        display: none;
+        margin: 0;
+        clear: both;
+    }
+    nav ul li.selected {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul:hover {
+        background-image: none;
+        }
+    nav ul:hover li {
+        display: block;
+        margin: 0 0 5px;
 }
-
+    nav ul:hover li a {
+        width: 100%;
+        text-align:left;
+        }
 
 /* ========================================== */
 /* ! Provide higher res assets for iPhone 4   */
@@ -29,96 +179,6 @@
 /*	.logo {
 		background: url(logo2x.jpg) no-repeat;
 		background-size: 212px 303px;
-	}*/
+	  }*/
 
-}
-
-body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    background: url("../img/ricepaper2.png") repeat;    
-    text-align: center;
-}
-
-h1, h2 {
-    text-shadow: 0px -1px 0px #B0B0BF;
-}
-h1, h2, h3 {
-    font-weight: normal;
-    line-height: 1.5em;
-}
-
-h1.title {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-h2.subtitle {
-    letter-spacing: 2px; 
-    font-size: 1.0em;
-}
-
-h3 {
-    font-size: 0.8em;
-    text-transform: uppercase;
-}
-p {
-    font-size: 0.8em;
-}
-sup {
-    letter-spacing: 0px;
-}
-h1.amp {
-    color: #FF6666;
-    font-size: 3em;
-    text-shadow: 0px -1px 0px #DDEEEE;
-}
-
-a, a:hover, a:visited, a:focus{
-    color: #FF6666;
-    text-decoration: none;
-}
-.header {
-    padding-top: 50px;
-    border-top: 10px solid #10101E;
-}
-.row {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.row.nav {
-    padding: 0;
-    }
-.nav ul {
-    padding: 0;
-    }
-.nav ul li {
-    list-style-type: none;
-    display: block;
-    }
-.nav ul li a, li span.selected {
-    font-size: 1.4em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #222;
-    padding: 30px;
-    display: block;
-    float: left;
-    width: 14%;
-}
-.nav ul li a:hover, li span.selected {
-    color: #FF6666;
-    text-shadow: 0px -1px 0px #DDEEEE;
-    }
-.content, .nav {
-    border-top: 5px dotted #10101E;
-}
-.content {
-        border-bottom: 5px dotted #10101E;
-}
-img {
-    margin-bottom: 20px;
-}
-.footer {
-    padding-top: 50px;
-    border-bottom: 20px solid #10101E;
 }
