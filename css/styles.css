@@ -120,8 +120,8 @@ footer p {
 footer h4.contact {
     display:none;
   }
-.wufoo .info h2 {
-    text-transform: uppercase; !important
+.info h2 {
+    text-transform: uppercase;
   }
 nav.mobile {
     display: none;
